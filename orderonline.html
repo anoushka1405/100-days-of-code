@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Online</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        form {
+            width: 500px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        fieldset {
+            border: solid black 2px;
+            margin-bottom: 20px;
+            padding:10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+  
+         }
+        input[type="submit"] {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #e65a50;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order From Restaurant</h1>
+    <form action="ThankYou.html">
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name"><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="phone">Phone number:</label>
+            <input type="text" id="phone" name="phone"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Order</legend>
+
+                <label for="farmhouse_pizza">Farmhouse Pizza</label>
+                <input type="checkbox" id="farmhouse_pizza" name="menu" value="Farmhouse Pizza">
+                
+                <label for="white_sauce_pasta">White Sauce Pasta</label>
+                <input type="checkbox" id="white_sauce_pasta" name="menu" value="White Sauce Pasta">
+                
+                <label for="lasagna">Lasagna</label>
+                <input type="checkbox" id="lasagna" name="menu" value="Lasagna">
+                
+                <label for="tacos">Tacos</label>
+                <input type="checkbox" id="tacos" name="menu" value="Tacos">                
+
+                <label for="nachos">Nachos</label>
+                <input type="checkbox" id="nachos" name="menu" value="Nachos">
+                
+               <label for="burrito">Burrito</label>
+               <input type="checkbox" id="burrito" name="menu" value="Burrito">
+                
+           
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+            
+            <label for="Details">Address:</label>
+            <textarea id="Details" name="Details" rows="4" ></textarea><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment</legend>
+            <label for="payment">Select Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+                <option value="net_banking">Net Banking</option>
+                <option value="cash_on_delivery">Cash on Delivery</option>
+            </select>
+        </fieldset>
+
+        <input type="submit" value="Place Order">
+    </form>
+</body>
+</html>
+
+
