@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become A Member</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 2;
+            margin: 20px;
+            background-color: #f0f4f8; /* Light background color */
+        }
+
+        h2, h3 {
+            color: #355C7D;
+            text-align: center;
+        }
+
+        .perks {
+            padding: 20px;
+            background-color: #ffffff; 
+        }
+
+        dt {
+            font-weight: bold;
+            margin-top: 15px;
+            color: #F67280;
+        }
+
+        dd {
+            margin: 5px;
+            color: #C06C84;
+            font-weight: bold;
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+            float: right; 
+            margin-left: 10px; 
+            transition: transform 0.2s;
+        }
+
+        @media (max-width: 600px) {
+            img {
+                display: block; 
+                margin: 10px auto; 
+            }
+        }
+
+        .form-container {
+            background-color: #ffffff; 
+            padding: 30px; 
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: 20px auto; 
+            max-width: 600px; 
+            text-align: center; 
+        }
+
+        input[type="text"], input[type="email"], input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 15px; 
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #355C7D;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #F67280; 
+        }
+    </style>
+</head>
+<body>
+    <h2>Become A Member</h2>
+    <div class="perks">
+        <h3>Perks:</h3>
+        <dl>
+            <dt>VIP Access To Menu</dt>
+            <dd>Get invited to food tasting events specially created by chefs</dd>
+            <img src="food.jpg" alt="Food Tasting">
+            
+            <dt>Social Connect</dt>
+            <dd>Have monthly social events and connect with people passionate about food</dd>
+            <img src="even1.jpg" alt="Social Events">
+            
+            <dt>Special Deals and Discounts</dt>
+            <dd>Enjoy special discounts on menu items and get to know about upcoming deals in advance</dd>
+            <img src="event.jpg" alt="Discounts">
+            
+            <dt>Cooking Classes</dt>
+            <dd>Get access to free cooking classes and guest chef workshops</dd>
+            <img src="workshop.jpg" alt="Cooking Classes">
+        </dl>
+    </div>
+
+    <div class="form-container">
+        <h3>Join Us Today!</h3>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <input type="submit" value="Become a Member">
+        </form>
+    </div>
+</body>
+</html>
+
+
