@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+}
+
+.piano {
+    display: flex;
+    position: relative;
+}
+
+.key {
+    border: 1px solid #444;
+    border-radius: 4px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.white {
+    width: 60px;
+    height: 220px;
+    background-color: white;
+    z-index: 1;
+    margin: 0 2px;
+}
+
+.black {
+    width: 40px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* First Octave */
+.key.black[data-key="C1Sharp"] {
+    left: 45px;
+}
+.key.black[data-key="D1Sharp"] {
+    left: 110px;
+}
+.key.black[data-key="F1Sharp"] {
+    left: 230px;
+}
+.key.black[data-key="G1Sharp"] {
+    left: 295px;
+}
+.key.black[data-key="A1Sharp"] {
+    left: 360px;
+}
+
+/* Second Octave */
+.key.black[data-key="CSharp"] {
+    left: 500px;  /* Shifted a little more to the left */
+}
+.key.black[data-key="DSharp"] {
+    left: 565px;  /* Shifted a little more to the left */
+}
+.key.black[data-key="FSharp"] {
+    left: 690px;
+}
+.key.black[data-key="GSharp"] {
+    left: 755px;
+}
+.key.black[data-key="ASharp"] {
+    left: 820px;
+}
+
+/* Third Octave */
+.key.black[data-key="C2Sharp"] {
+    left: 935px;
+}
+.key.black[data-key="D2Sharp"] {
+    left: 1000px;
+}
+.key.black[data-key="F2Sharp"] {
+    left: 1130px;  /* Shifted a little more to the right */
+}
+.key.black[data-key="G2Sharp"] {
+    left: 1195px;  /* Shifted a little more to the right */
+}
+.key.black[data-key="A2Sharp"] {
+    left: 1260px;  /* Shifted a little more to the right */
+}
+
+.key:hover {
+    opacity: 0.8;
+}
+
+.key:active {
+    opacity: 0.6;
+}
