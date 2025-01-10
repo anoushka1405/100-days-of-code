@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const keyData = key.getAttribute('data-key');
         console.log(`Key pressed: ${keyData}`); 
         if (keyData) {
-            const audio = new Audio(`sounds/${keyData}.mp3`);
+            const audio = new Audio(`Sounds/${keyData}.mp3`);
             audio.play();
         }
     }
